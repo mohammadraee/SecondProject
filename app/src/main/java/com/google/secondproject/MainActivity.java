@@ -19,6 +19,7 @@ import com.google.secondproject.File.FileActivity;
 import com.google.secondproject.Fragment.FragmentActivity;
 import com.google.secondproject.IntroSlider.IntroSliderActivity;
 import com.google.secondproject.JsonXml.JsonXmlActivity;
+import com.google.secondproject.MultiTab.TabActivity;
 import com.google.secondproject.Preference.PrefActivity;
 import com.google.secondproject.RecyclerView.RecyclerViewActivity;
 import com.google.secondproject.SettingScreen.SettingScreenActivity;
@@ -50,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         topics.add("data base");
         topics.add("fragment");
         topics.add("recycler view");
+        topics.add("multi tab");
     }
 
     private void refreshDisplay() {
@@ -83,6 +85,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "recycler view":
                         startActivity(new Intent(MainActivity.this, RecyclerViewActivity.class));
+                        break;
+                    case "multi tab":
+                        startActivity(new Intent(MainActivity.this, TabActivity.class));
                         break;
                     default:
                         break;

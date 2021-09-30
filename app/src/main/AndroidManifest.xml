@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SecondProject">
-        <activity android:name=".RecyclerView.RecyclerViewActivity"></activity>
+        <activity android:name=".MultiTab.TabActivity"></activity>
+        <activity android:name=".MultiTab.SimpleTabActivity" />
+        <activity android:name=".RecyclerView.RecyclerViewActivity" />
         <activity android:name=".Fragment.PreferenceFrag.FragPrefActivity" />
         <activity android:name=".Fragment.ActToActTranData.StuDetailActivity" />
         <activity android:name=".Fragment.FragmentActivity" />
