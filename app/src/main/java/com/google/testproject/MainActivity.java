@@ -15,4 +15,8 @@ public class MainActivity extends AppCompatActivity {
     public void helloWorld() {
         System.out.println("hello world");
     }
+
+    public void helloWorld2() {
+        System.out.println("hello world");
+    }
 }
