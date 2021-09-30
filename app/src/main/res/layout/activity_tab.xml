@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MultiTab.TabActivity">
+
+    <Button
+        android:tag="simple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simple Tabs"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onclick"/>
+
+    <Button
+        android:tag="scrollable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scrollable Tabs"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onclick"/>
+
+    <Button
+        android:tag="IconAndText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Icon and Text"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onclick"/>
+
+    <Button
+        android:tag="onlyIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Only Icon"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onclick"/>
+</LinearLayout>
