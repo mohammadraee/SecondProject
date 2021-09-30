@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Notification Settings">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:title="notification"
+            android:summary="application wants to send you notification"
+            android:key="notify" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="user information">
+        <EditTextPreference
+            android:defaultValue=""
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="username"
+            android:key="username"
+            android:summary="your name"/>
+        <EditTextPreference
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="phone"
+            android:key="phone"
+            android:summary="your phone number"/>
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="News">
+
+        <ListPreference
+            android:defaultValue="Iran"
+            android:title="Country"
+            android:entries="@array/country_names"
+            android:entryValues="@array/country_names"
+            android:key="country" />
+
+        <MultiSelectListPreference
+            android:title="Cities"
+            android:defaultValue="@array/cities"
+            android:entries="@array/cities"
+            android:entryValues="@array/cities"
+            android:key="cities" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

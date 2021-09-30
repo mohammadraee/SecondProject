@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E8E6E6">
+
+            <EditText
+                android:layout_weight="1"
+                android:enabled="false"
+                android:paddingLeft="12dp"
+                android:text="name"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:paddingLeft="10dp"
+                android:id="@+id/stu_name_input"
+                android:layout_weight="3"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C1ECE8">
+
+            <EditText
+                android:layout_weight="1"
+                android:enabled="false"
+                android:paddingLeft="12dp"
+                android:text="id"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:paddingLeft="10dp"
+                android:id="@+id/stu_id_input"
+                android:layout_weight="3"
+                android:inputType="text"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E8E6E6">
+
+            <EditText
+                android:layout_weight="1"
+                android:enabled="false"
+                android:paddingLeft="12dp"
+                android:text="score"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:paddingLeft="10dp"
+                android:id="@+id/stu_score_input"
+                android:layout_weight="3"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </TableRow>
+
+
+    </TableLayout>
+
+</LinearLayout>
