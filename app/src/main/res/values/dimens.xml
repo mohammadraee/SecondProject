@@ -16,5 +16,6 @@
     <dimen name="slide_btn_height">50dp</dimen>
 
     <dimen name="slide_content_margin_top">110dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 
 </resources>

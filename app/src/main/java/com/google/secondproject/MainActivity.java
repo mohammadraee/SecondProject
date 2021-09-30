@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         topics.add("data base");
         topics.add("fragment");
         topics.add("recycler view");
+        topics.add("multi tab");
     }
 
     private void refreshDisplay() {
@@ -83,6 +84,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "recycler view":
                         startActivity(new Intent(MainActivity.this, RecyclerViewActivity.class));
+                        break;
+                    case "multi tab":
+                        startActivity(new Intent(MainActivity.this, SimpleTabActivity.class));
                         break;
                     default:
                         break;
