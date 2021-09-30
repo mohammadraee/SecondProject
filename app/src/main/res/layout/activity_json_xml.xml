@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".JsonXml.JsonXmlActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_xml_pullParser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="xml pull"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_xml_simpleJdom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="simple xml jdom"
+            android:textAllCaps="false" />
+
+
+        <Button
+            android:id="@+id/btn_xml_genericJdom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="generic xml jdom"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_json_simple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="simple json"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_xml_to_json"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="xml to json"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/json_xml_listVIew"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">SecondProject</string>
+
+    <array name="filed_items">
+        <item>مهندسی کامپیوتر</item>
+        <item>مهندسی برق</item>
+        <item>مهندسی صنایع</item>
+        <item>مهندسی مکانیک</item>
+    </array>
+    <array name="filed_value">
+        <item>Computer Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Industrial Engineering</item>
+        <item>Mechanical Engineering</item>
+    </array>
+
+    <string name="slide_1_title">Hello Food!</string>
+    <string name="slide_1_desc">The easiest way to order food from your favorite restaurant!</string>
+
+    <string name="slide_2_title">Movie Tickets</string>
+    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts in every single service we offer!</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Book tickets for any transportation and travels the world!</string>
+
+    <string name="skip">SKIP</string>
+    <string name="gotit">GOT IT</string>
+    <string name="next">NEXT</string>
+
+    <string-array name="slide_titles">
+        <item>@string/slide_1_title</item>
+        <item>@string/slide_2_title</item>
+        <item>@string/slide_3_title</item>
+        <item>@string/slide_4_title</item>
+    </string-array>
+
+    <string-array name="slide_desc">
+        <item>@string/slide_1_desc</item>
+        <item>@string/slide_2_desc</item>
+        <item>@string/slide_3_desc</item>
+        <item>@string/slide_4_desc</item>
+    </string-array>
+
+    <string-array name="country_names">
+        <item>Iran</item>
+        <item>China</item>
+        <item>Germany</item>
+        <item>France</item>
+    </string-array>
+
+    <string-array name="country_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="cities">
+        <item>Tehran</item>
+        <item>Ferdows</item>
+        <item>Mashhad</item>
+        <item>Shiraz</item>
+        <item>Isfahan</item>
+        <item>Ahwaz</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".File.FileActivity">
+
+    <EditText
+        android:id="@+id/input_fileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="file name"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLength="20"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/input_fileContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_fileName"
+        android:hint="file content"
+        android:inputType="textMultiLine"
+        android:lines="6"
+        android:maxLines="4"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/file_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_fileContent"
+        android:text="external storage" />
+
+    <LinearLayout
+        android:id="@+id/file_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/file_checkBox">
+
+        <Button
+            android:id="@+id/file_load_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="load file"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/file_create_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="create file"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/file_textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/file_btn_layout" />
+
+</RelativeLayout>
