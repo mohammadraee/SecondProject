@@ -23,6 +23,7 @@ import com.google.secondproject.MultiTab.TabActivity;
 import com.google.secondproject.Preference.PrefActivity;
 import com.google.secondproject.RecyclerView.RecyclerViewActivity;
 import com.google.secondproject.SettingScreen.SettingScreenActivity;
+import com.google.secondproject.XmlAnimation.XmlAnimActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         topics.add("fragment");
         topics.add("recycler view");
         topics.add("multi tab");
+        topics.add("xml animation");
     }
 
     private void refreshDisplay() {
@@ -88,6 +90,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "multi tab":
                         startActivity(new Intent(MainActivity.this, TabActivity.class));
+                        break;
+                    case "xml animation":
+                        startActivity(new Intent(MainActivity.this, XmlAnimActivity.class));
                         break;
                     default:
                         break;
