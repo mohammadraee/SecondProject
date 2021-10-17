@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         topics.add("recycler view");
         topics.add("multi tab");
         topics.add("xml animation");
+        topics.add("sharing card");
     }
 
     private void refreshDisplay() {
@@ -93,6 +94,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "xml animation":
                         startActivity(new Intent(MainActivity.this, XmlAnimActivity.class));
+                        break;
+                    case "sharing card":
+                        startActivity(new Intent(MainActivity.this, SharingCardActivity.class));
                         break;
                     default:
                         break;

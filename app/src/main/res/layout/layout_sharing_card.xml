@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="12dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/top_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/cover_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cover_image_height"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/image" />
+
+            <RelativeLayout
+                android:id="@+id/layout_reveal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cover_image_height"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/sn_color"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/layout_btns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/social_btn_1"
+                        style="@style/social_button_style"
+                        android:text="View Profile" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/social_btn_2"
+                        style="@style/social_button_style"
+                        android:text="Send Message" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/social_btn_3"
+                        style="@style/social_button_style"
+                        android:text="Share" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/social_icon"
+            android:layout_width="@dimen/social_icon_width_height"
+            android:layout_height="@dimen/social_icon_width_height"
+            android:layout_alignBottom="@id/top_frame"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/social_icon_margin_right"
+            android:layout_marginBottom="@dimen/social_icon_margin_bottom"
+            android:background="@drawable/social_icon_bg"
+            android:elevation="10dp"
+            android:src="@drawable/twitter_logo" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/profile_image_width_height"
+            android:layout_height="@dimen/profile_image_width_height"
+            android:layout_alignBottom="@id/top_frame"
+            android:layout_marginLeft="@dimen/profile_image_margin_left"
+            android:layout_marginBottom="@dimen/profile_image_margin_bottom"
+            app:srcCompat="@drawable/profile_image" />
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/top_frame" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/space"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/content"
+            android:textColor="#333232"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="4dp"
+            android:text="Friday 22 FEB."
+            android:textColor="#A3A2A2"
+            android:textSize="14sp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
