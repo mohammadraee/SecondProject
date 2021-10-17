@@ -1,4 +1,4 @@
-package com.google.secondproject;
+package com.google.secondproject.SharingCard;
 
 import android.animation.Animator;
 import android.os.Build;
@@ -15,6 +15,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.appcompat.widget.AppCompatImageView;
+
+import com.google.secondproject.R;
 
 public class SharingCardActivity extends AppCompatActivity {
 

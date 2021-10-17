@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SecondProject">
-        <activity android:name=".SharingCardActivity"></activity>
+        <activity android:name=".SharingCard.SharingCardActivity"></activity>
         <activity android:name=".XmlAnimation.XmlAnimActivity" />
         <activity android:name=".MultiTab.TabActivity" />
         <activity android:name=".MultiTab.SimpleTabActivity" />

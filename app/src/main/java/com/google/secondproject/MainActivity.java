@@ -23,6 +23,7 @@ import com.google.secondproject.MultiTab.TabActivity;
 import com.google.secondproject.Preference.PrefActivity;
 import com.google.secondproject.RecyclerView.RecyclerViewActivity;
 import com.google.secondproject.SettingScreen.SettingScreenActivity;
+import com.google.secondproject.SharingCard.SharingCardActivity;
 import com.google.secondproject.XmlAnimation.XmlAnimActivity;
 
 import java.util.ArrayList;
